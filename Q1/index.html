@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <title>Task numbers one payment Invoice</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <p>Warung Makan Sederhana</p>
+                    <p>Tanggal : 2020/12/2020 15:30:00</p>
+                    <p>Nama Kasir : {{yourname}}</p>
+                </div>
+                <div class="aline">
+                    
+                </div>
+                <div>
+                    <div class="article">
+                        <span class="item">Nasi</span>
+                        <span class="dots"></span>
+                        <span class="price">Rp {{formatPrice(nasi)}}</span>
+                    </div>
+                    <div class="article">
+                        <span class="item">Lauk</span>
+                        <span class="dots"></span>
+                        <span class="price">Rp {{formatPrice(lauk)}}</span>
+                    </div>
+                    <div class="article">
+                        <span class="item">Minum</span>
+                        <span class="dots"></span>
+                        <span class="price">Rp {{formatPrice(minum)}}</span>
+                    </div>
+                    <div class="article mt-4">
+                        <span class="item">total</span>
+                        <span class="dots"></span>
+                        <span class="price">Rp {{formatPrice(total)}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.body { 
+  width:  100px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-center {
+  margin-top: 3rem;
+  letter-spacing: 3px
+}
+
+.aline { 
+  border-bottom: 3px double black;
+  width: 20rem;
+  margin: 20px auto;
+
+}
+.article{   
+    max-width: 20rem;
+    margin: 10px auto;
+    display: flex;
+}
+.dots { 
+  display: block;
+  background: radial-gradient(circle, rgba(0,0,0,.62) 1px, transparent 1px) repeat-x;
+  background-size: 20px 28px;
+  flex-grow: 20;
+}
